@@ -9,6 +9,9 @@ export default {
       areas: data.areas
     };
 
+    const token = context.rootGetters.token;
+    console.log('Token:', token); 
+    
     const response = await fetch(
       `https://vue-http-demo-655e7-default-rtdb.europe-west1.firebasedatabase.app/coaches/${userId}.json`,
       {
